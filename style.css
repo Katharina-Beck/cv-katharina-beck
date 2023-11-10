@@ -1,12 +1,12 @@
 /*****Universal Styles****/
-
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: "Gill Sans", sans-serif;
 }
 
-body {
-  margin: 0;
+html {
+  font-family: "Gill Sans", sans-serif;
 }
 
 h1,
@@ -15,6 +15,14 @@ h3 {
   font-family: "Verdana", sans-serif;
   color: brown;
 }
+body {
+  margin: 0;
+}
+
+*::selection {
+  background: blue;
+  color: black;
+}
 
 /*****Header Styles******/
 
@@ -22,6 +30,10 @@ h3 {
   padding: 16px;
   text-align: center;
   background-color: grey;
+}
+
+.profession::after {
+  content: "🖥️";
 }
 
 /****Link Styles****/
@@ -55,11 +67,10 @@ h3 {
 .site-main > * + * {
   margin-top: 48px;
 }
-
 .site-main > * {
   border-top: 2px solid black;
 }
 
-.site-main *:first-child {
+.site-main > *:first-child {
   border-top: none;
 }
