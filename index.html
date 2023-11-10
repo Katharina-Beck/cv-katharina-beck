@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The CV of Katharina Beck</title>
-    <meta name="description" content="This is the CV of Katharina Beck" name="author" content="Katharina Beck" />
+    <meta name="description" content="This is the CV of Katharina Beck" />
+    <meta name="author" content="Katharina Beck" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <main>
-        <img src="Foto.PNG" style="width:10%;" alt="">
+    <header class="site-header">
+        <div>
+            <img src="Foto.PNG" style="width:10%;" alt="">
+        </div>
         <h1>Katharina Beck<br>Upcoming Web Developer</h1>
 
         <h2>Personal Information</h2>
@@ -18,44 +24,78 @@
         <p><strong>Age:</strong>31</p>
         <p><strong>Place of residence:</strong>Berlin</p>
         <p><strong>Email:</strong><a href="mailto:katja131291@gmail.com">katja131291@gmail.com</a></p>
-        <article>
+
+        <section>
+            <nav>
+                <a class="nav-link" href="#working experience">Work Experience</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#existing experience">Existing Experience</a>
+                <a class="nav-link" href="#what i am currently learning in the coding-bootcamp">What I am currently
+                    learning in the
+                    coding-bootcamp</a>
+                <a class="nav-link" href="#in the coming weeks i will lern the following">In the coming weeks I will
+                    lern the
+                    following</a>
+            </nav>
+        </section>
+    </header>
+    <main class="site-main">
+        <article id="experience">
             <h3>Work Experience</h3>
-            <p>I am a qualified office management assistant and have worked in payroll accounting for the
-                last
-                few years.<br>
-                Since I lacked creativity in this area, I decided to gain a foothold in IT an become a Web
-                Developer.<br>
-                With the help of <a href="https://www.coding-bootcamps.eu/">Coding Bootcamp Europe</a>, I am
-                learning the basics of web developent so that i can start as a career changer in this field.
-            </p>
+            <section>
+                <p>I am a qualified office management assistant and have worked in payroll accounting for the
+                    last
+                    few years.<br>
+                    Since I lacked creativity in this area, I decided to gain a foothold in IT an become a Web
+                    Developer.<br>
+                    With the help of <a href="https://www.coding-bootcamps.eu/">Coding Bootcamp
+                        Europe</a>,
+                    I am
+                    learning the basics of web developent so that i can start as a career changer in this field.
+                </p>
+            </section>
         </article>
-        <section>
+
+
+        <article id="Education">
             <h3>Education</h3>
-            <ul>
-                <li>2016 - 2018 - Graduation Office Management Assistant</li>
-                <li>2019 - (for 3 months) Completion of further training in Payroll Accounting</li>
-                <li>2021 - 2022 Employment as a assistant in the Payroll Department</li>
-            </ul>
-        </section>
-        <section>
+            <section>
+                <ul>
+                    <li>2016 - 2018 - Graduation Office Management Assistant</li>
+                    <li>2020 - (for 3 months) Completion of further training in Payroll Accounting</li>
+                    <li>2021 - 2022 Employment as a assistant in the Payroll Department</li>
+                </ul>
+            </section>
+        </article>
+        <article id="experience">
             <h3>Existing Experience</h3>
-            <ul>
-                <li>Working with MS office applications</li>
-                <li>Payroll accounting via various accounting programs</li>
-                <li>Data Management</li>
-            </ul>
-        </section>
-        <section>
+            <section>
+                <ul>
+                    <li>Working with MS office applications</li>
+                    <li>Payroll accounting via various accounting programs</li>
+                    <li>Data Management</li>
+                </ul>
+            </section>
+        </article>
+
+
+
+        <article id="learning">
             <h3>What I am currently learning in the coding-bootcamp</h3>
-            <ul>
-                <li>How to use Github</li>
-                <li>How tu use Terminals like Bash</li>
-                <li>How to use Visual Studio Code</li>
-                <li>HTML Foundation</li>
-            </ul>
-        </section>
+            <section>
+                <ul>
+                    <li>How to use Github</li>
+                    <li>How tu use Terminals like Bash</li>
+                    <li>How to use Visual Studio Code</li>
+                    <li>HTML Foundation</li>
+                </ul>
+            </section>
+        </article>
+
+
+        <article id="will learn"></article>
+        <h3>In the coming weeks I will lern the following</h3>
         <section>
-            <h3>In the coming weeks I will lern the following</h3>
             <ul>
                 <li>CSS Foundation and Advanced CSS </li>
                 <li>JavaScript Foundation</li>
@@ -66,6 +106,8 @@
                 <li>Refactoring and Testing</li>
             </ul>
         </section>
+        </article>
+
     </main>
 </body>
 

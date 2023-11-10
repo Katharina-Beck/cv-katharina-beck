@@ -1,0 +1,65 @@
+/*****Universal Styles****/
+
+html {
+  box-sizing: border-box;
+  font-family: "Gill Sans";
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Verdana;
+  color: brown;
+}
+
+/*****Header Styles******/
+
+.site-header {
+  padding: 16px;
+  text-align: center;
+  background-color: grey;
+}
+
+/****Link Styles****/
+
+.nav-link {
+  padding: 4px 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: purple;
+}
+
+.nav-link:active {
+  background-color: yellow;
+}
+
+.nav-link + .nav-link {
+  margin: 16px;
+}
+
+/*****Main Styles***/
+
+.site-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.site-main > * + * {
+  margin-top: 48px;
+}
+
+.site-main > * {
+  border-top: 2px solid black;
+}
+
+.site-main *:first-child {
+  border-top: none;
+}
