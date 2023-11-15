@@ -16,6 +16,7 @@
 
 html {
   font-family: "Gill Sans", sans-serif;
+  font-style: 100%;
 }
 
 h1,
@@ -45,10 +46,10 @@ body {
 
 .hire-me {
   position: absolute;
-  right: 16px;
-  top: 16px;
-  padding: 8px;
-  border-radius: 2px;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.13rem;
   background-color: var(--color-2);
   color: black;
 }
@@ -59,7 +60,7 @@ body {
 }
 
 .site-header {
-  padding: 16px;
+  padding: 1rem;
   text-align: center;
   color: var(--color-3);
   background-color: var(--color-5);
@@ -77,11 +78,11 @@ body {
 nav {
   background: var(--color-3);
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 0.3rem;
 }
 
 .nav-link {
-  padding: 4px 16px;
+  padding: 0.3rem 1rem;
   color: var(--color-5);
   text-decoration: none;
 }
@@ -89,7 +90,7 @@ nav {
 .nav-link:hover {
   background-color: var(--color-4);
   color: var(--color-5);
-  border-radius: 5px;
+  border-radius: 0.3rem;
 }
 
 .nav-link:active {
@@ -97,42 +98,37 @@ nav {
 }
 
 .nav-link + .nav-link {
-  margin: 16px;
+  margin: 1rem;
 }
 
 /*****Main Styles***/
 
 .site-main {
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .site-main > * + * {
-  margin-top: 48px;
+  margin-top: 3rem;
 }
 .site-main > * {
-  border-top: 2px solid black;
+  border-top: 0.13rem solid black;
 }
 
 .site-main > *:first-child {
   border-top: none;
 }
 
-.article {
-  /* position: relative; */
-  /* left: 16px; */
-}
-
 .p {
   position: relative;
   display: inline;
-  left: 50px;
+  left: 3rem;
 }
 
 .info-section {
   position: relative;
-  left: 16px;
+  left: 1rem;
 }
 
 #work {
