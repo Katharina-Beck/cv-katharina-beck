@@ -15,8 +15,20 @@
 }
 
 html {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-style: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 922px) {
+  html {
+    font-size: 1.5rem;
+  }
 }
 
 h1,
@@ -37,10 +49,10 @@ body {
 /*****Header Styles******/
 
 [src] {
-  width: 10%;
-  border-radius: 100%;
+  width: 10rem;
+  border-radius: 1rem;
   border-width: 0.5rem;
-  border-style: double;
+  border-style: solid;
   border-color: var(--color-3);
 }
 
@@ -49,14 +61,28 @@ body {
   right: 1rem;
   top: 1rem;
   padding: 0.5rem;
-  border-radius: 0.13rem;
+  border-radius: 0.25rem;
   background-color: var(--color-2);
   color: black;
 }
 
 .hire-me:hover {
   background-color: var(--color-1);
-  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .hire-me {
+    position: fixed;
+  }
+}
+
+@media print {
+  .hire-me {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
 }
 
 .site-header {
@@ -64,6 +90,16 @@ body {
   text-align: center;
   color: var(--color-3);
   background-color: var(--color-5);
+}
+
+.heading-group {
+  font-size: 3rem;
+}
+.main-heading {
+  font-size: 1em;
+}
+.profession {
+  font-size: 0.5em;
 }
 
 .profession::after {
@@ -77,10 +113,17 @@ body {
 
 nav {
   background: var(--color-3);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
+@media screen and (min-width: 1080px) {
+  nav {
+    flex-direction: row;
+  }
+}
 .nav-link {
   padding: 0.3rem 1rem;
   color: var(--color-5);
@@ -98,13 +141,13 @@ nav {
 }
 
 .nav-link + .nav-link {
-  margin: 1rem;
+  margin-left: 1rem;
 }
 
 /*****Main Styles***/
 
 .site-main {
-  max-width: 50rem;
+  max-width: 100ch;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -120,6 +163,12 @@ nav {
   border-top: none;
 }
 
+@media screen and (min-width: 768px) {
+  .site-main * + * {
+    margin-top: 0.5rem;
+  }
+}
+
 .p {
   position: relative;
   display: inline;
@@ -133,4 +182,7 @@ nav {
 
 #work {
   display: inline-block;
+}
+#experience {
+  display: flex;
 }
