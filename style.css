@@ -147,7 +147,7 @@ nav {
 /*****Main Styles***/
 
 .site-main {
-  max-width: 100ch;
+  max-width: 80ch;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -169,20 +169,31 @@ nav {
   }
 }
 
-.p {
+p {
   position: relative;
-  display: inline;
-  left: 3rem;
+  /* display: inline; */
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.info-section {
+/* .info-section {
   position: relative;
   left: 1rem;
-}
+} */
 
 #work {
   display: inline-block;
 }
-#experience {
+
+.article-header {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1080px) {
+  .education-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
